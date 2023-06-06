@@ -30,7 +30,8 @@ RUN set -x \
 WORKDIR /home/steam/avorion-dedicated
 COPY --from=build --chown=steam /home/steam/avorion-dedicated .
 USER steam
-# VOLUME /home/steam/.avorion/galaxies/avorion_galaxy
+
+COPY server.ini /home/steam/.avorion/galaxies/avorion_galaxy/server.ini
 
 EXPOSE 27000/tcp
 EXPOSE 27000/udp
