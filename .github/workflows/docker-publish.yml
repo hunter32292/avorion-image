@@ -1,4 +1,4 @@
-name: Docker-Push
+name: Docker-Publish
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -15,7 +15,7 @@ on:
 
 env:
   # Use docker.io for Docker Hub if empty
-  REGISTRY: "docker.io/"
+  REGISTRY: "docker.io/hunter3229"
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
 
